@@ -27,7 +27,7 @@ int main()
     if ((m1>0)&(m2<0))
     {
         pow(3, x) = m1;
-        pow(3, x) = m2;// корней нет
+        pow(3, x) = m2;
         x = log3(x);
         
     }
