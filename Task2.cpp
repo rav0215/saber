@@ -6,36 +6,36 @@ int main() {
     double pi;
     int f; 
     float a, h, r, d1, d2, S; 
-    cout <<"Определение типа фигуры\n";
-    cout <<"1 - параллелограмм, 2 - сфера, 3 - ромб";
+    cout <<"the definition of figure type";
+    cout <<"1 - parallelogram, 2 - sphere, 3 - rhomb";
     cin >> f;
     if ((f<1)&(f>3))
-        cout << "Программная ошибка\n";
+        cout << "programming error";
     else {
         switch (f) {
             case 1 :
-                cout << "Введите длину стороны параллелограмма";
+                cout << "enter the value of the side of parallelogram";
                 cin >> a;
-                cout << "Введите значение высоты параллелограмма";
+                cout << "enter the height value of parallelogram";
                 cin >> h;
                 S = a * h;
                 break;
             case 2 :
-                cout << "Введите радиус сферы";
+                cout << "enter the radius of the sphere";
                 cin >> r;
                 S = 4 * pi * pow(r, 2);
                 break;
             case 3 :
-                cout << "Введите длину первой диагонали ромба";
+                cout << "enter the value of the first diagonal of rhomb";
                 cin >> d1;
-                cout << "Введите длину второй диагонали ромба";
+                cout << "enter the value of the second diagonal of rhomb";
                 cin >> d2;
                 S = (d1 * d2) / 2;
                 break;
 
         }
 
-        cout << "Площадь заданной фигуры равна" << S;
+        cout << "the square preset shape equal" << S;
     }
     
     return 0;
